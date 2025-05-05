@@ -8,8 +8,8 @@
 module "api" {
   source     = "github.com/kurtradecki/gcp-enable-apis-demo"
   project_id = "project_id"
-  api_list   = "["compute.googleapis.com", 
+  api_list   = ["compute.googleapis.com", 
   "certificatemanager.googleapis.com",
-  "run.googleapis.com"]"
+  "run.googleapis.com"]
 }
 ```
