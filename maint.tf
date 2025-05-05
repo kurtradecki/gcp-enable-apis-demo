@@ -3,7 +3,7 @@ locals {
 }
 
 resource "google_project_service" "api" {
-  for_each service in local.api_map
+  for_each = local.api_map
   project = var.project_id
-  service = each.service.value
+  service = each.value
 }
