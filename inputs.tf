@@ -20,5 +20,5 @@ variable project_id {
 }
 
 variable api_list {
-  type        = list(string)
+  type = list(string)
 }
